@@ -8,6 +8,7 @@
 ![SHAP](https://img.shields.io/badge/SHAP-Explainability-6A5ACD?style=flat)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat&logo=pandas&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-Statistical%20Tests-8CAAE6?style=flat&logo=scipy&logoColor=white)
+
 End-to-end проєкт машинного навчання для прогнозування відтоку клієнтів телеком-оператора, побудований на базі локального сховища **SQLite**, інженерії ознак через **SQL (CTE, CASE WHEN, віконні функції)**, пайплайнів **Scikit-Learn** без витоку даних та оптимізації порогу класифікації під матрицю бізнес-витрат.
 
 ---
