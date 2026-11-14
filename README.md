@@ -87,15 +87,18 @@ Bash
     python -m venv .venv
     source .venv/bin/activate  # Для Windows PowerShell: .venv\Scripts\Activate.ps1
     pip install -r requirements.txt
+
 3. Підготовка даних (покласти telco_churn.csv у data/raw/):
  
   Bash
     python -m src.ingest_data
     python -m src.make_dataset
+
 4. Навчання моделі та оптимізація бізнес-порогу:
 
   Bash
     python -m src.train
+
 5. Генерація списку клієнтів для утримання:
 
    Bash
