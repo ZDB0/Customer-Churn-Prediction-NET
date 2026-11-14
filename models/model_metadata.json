@@ -1,0 +1,19 @@
+{
+    "model_type": "RandomForestClassifier",
+    "train_samples": 5634,
+    "test_samples": 1409,
+    "cv_roc_auc_mean": 0.8427,
+    "cv_pr_auc_mean": 0.6581,
+    "test_roc_auc": 0.8489,
+    "test_pr_auc": 0.6751,
+    "optimal_threshold": 0.205,
+    "business_metrics_test": {
+        "cost_retention": 20,
+        "cost_churn": 100,
+        "cost_no_model": 37400,
+        "cost_default_threshold_0_5": 24340,
+        "cost_optimal_threshold": 18560,
+        "savings_vs_default_threshold": 5780,
+        "savings_vs_no_model": 18840
+    }
+}
