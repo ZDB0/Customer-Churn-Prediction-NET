@@ -1,5 +1,13 @@
 # Customer Churn Prediction Pipeline (SQL + ML + Business Threshold Optimization)
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-CTE%20%26%20Window%20Functions-0F80CC?style=flat&logo=sqlite&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Pipeline%20%26%20CV-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![Random Forest](https://img.shields.io/badge/Random%20Forest-ROC--AUC%200.852-2EA44F?style=flat)
+![LightGBM](https://img.shields.io/badge/LightGBM-Gradient%20Boosting-02569B?style=flat)
+![SHAP](https://img.shields.io/badge/SHAP-Explainability-6A5ACD?style=flat)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat&logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-Statistical%20Tests-8CAAE6?style=flat&logo=scipy&logoColor=white)
 End-to-end проєкт машинного навчання для прогнозування відтоку клієнтів телеком-оператора, побудований на базі локального сховища **SQLite**, інженерії ознак через **SQL (CTE, CASE WHEN, віконні функції)**, пайплайнів **Scikit-Learn** без витоку даних та оптимізації порогу класифікації під матрицю бізнес-витрат.
 
 ---
