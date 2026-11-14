@@ -79,20 +79,24 @@ customer-churn-prediction/
 ## 5. Інструкція запуску
 
 1. Клонування репозиторію та налаштування середовища:
-  Bash
+
+Bash
     git clone [https://github.com/](https://github.com/)<твій-нікнейм>/customer-churn-prediction.git
     cd customer-churn-prediction
     python -m venv .venv
     source .venv/bin/activate  # Для Windows PowerShell: .venv\Scripts\Activate.ps1
     pip install -r requirements.txt
-2. Підготовка даних (покласти telco_churn.csv у data/raw/):
+3. Підготовка даних (покласти telco_churn.csv у data/raw/):
+ 
   Bash
     python -m src.ingest_data
     python -m src.make_dataset
-3. Навчання моделі та оптимізація бізнес-порогу:
+4. Навчання моделі та оптимізація бізнес-порогу:
+
   Bash
     python -m src.train
-4. Генерація списку клієнтів для утримання:
+5. Генерація списку клієнтів для утримання:
+
    Bash
      python -m src.predict
    
