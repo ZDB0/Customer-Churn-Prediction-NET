@@ -102,7 +102,7 @@ def train() -> None:
     )[:, 1]
     optimal_threshold = find_optimal_threshold(y_train, oof_proba)
 
-    # Фінальне навчання на X_train та перевірка на відкладеному X_test
+    # Фінальне навчання на X_train та перевірка на відкладеному Y_test
     pipeline.fit(X_train, y_train)
     y_test_proba = pipeline.predict_proba(X_test)[:, 1]
 
