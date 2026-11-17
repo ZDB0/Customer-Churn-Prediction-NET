@@ -52,13 +52,13 @@ SELECT
     -- Відношення платежу клієнта до середнього платежу за його типом контракту
     ROUND(b.MonthlyCharges / cs.avg_contract_charge, 3) AS charge_to_contract_avg_ratio,
 
-    -- Відхилення платежу від середнього по типу інтернету (віконна функція)
+    -- Відхилення платежу від середнього по типу інтернету 
     ROUND(
         b.MonthlyCharges - AVG(b.MonthlyCharges) OVER (PARTITION BY s.InternetService), 
         2
     ) AS diff_from_internet_avg,
 
-    -- Процентильний ранг платежу всередині контракту (віконна функція)
+    -- Процентильний ранг платежу всередині контракту 
     ROUND(
         PERCENT_RANK() OVER (PARTITION BY b.Contract ORDER BY b.MonthlyCharges), 
         3

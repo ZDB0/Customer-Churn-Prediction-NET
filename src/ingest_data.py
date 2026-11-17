@@ -13,10 +13,10 @@ def load_raw_to_sqlite() -> None:
 
     df = pd.read_csv(RAW_DATA_PATH)
 
-    # Замінюємо пробіли в TotalCharges на 0.0 для нових клієнтів (tenure = 0)
+    # Замінюємо пробіли в TotalCharges на 0.0 для нових клієнтів 
     df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce").fillna(0.0)
 
-    # Бінаризуємо цільову змінну Churn: 'Yes' -> 1, 'No' -> 0
+    # Бінаризуємо цільову змінну Churn(відтік клієнта): 'Yes' -> 1, 'No' -> 0
     df["Churn"] = (df["Churn"] == "Yes").astype(int)
 
     customers_cols = [
